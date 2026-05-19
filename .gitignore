@@ -1,0 +1,27 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+__pycache__/
+.env
+*.swp
+.DS_Store
+
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+
+# Python
+venv/
+.venv/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/

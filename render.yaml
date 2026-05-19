@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: employee-task-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: SEED_TEST_USER
+        value: "true"
+      - key: CORS_ORIGINS
+        value: "*"
